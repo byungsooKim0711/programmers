@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MockExample",
+            "request": "launch",
+            "mainClass": "org.kimbs.algorithms.mockexample.MockExample",
+            "projectName": "kimbs"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BigNumber",
+            "request": "launch",
+            "mainClass": "org.kimbs.algorithms.bignumber.BigNumber",
+            "projectName": "kimbs"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SkillTree",
+            "request": "launch",
+            "mainClass": "org.kimbs.algorithms.skilltree.SkillTree",
+            "projectName": "kimbs"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AutoComplete",
+            "request": "launch",
+            "mainClass": "org.kimbs.algorithms.kakaoblind.autocomplete.AutoComplete",
+            "projectName": "kimbs"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Palindrome",
             "request": "launch",
             "mainClass": "palindrome.Palindrome"
