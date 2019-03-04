@@ -7,15 +7,28 @@ import org.junit.Test;
 public class ArrayRotateTest {
 
     @Test
-    public void test() {
+    public void leftRotateTest() {
         /* arrange */
         ArrayRotate rotate = new ArrayRotate();
-        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+        int[] arr = {1, 2, 3, 4, 5, 6};
 
         /* act */
-        rotate.leftRotate(arr, 13);
+        rotate.leftRotate(arr, 2);
 
-        int[] expecteds = {14, 15, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+        int[] expecteds = {3, 4, 5, 6, 1, 2};
+        assertArrayEquals(expecteds, arr);
+    }
+
+    @Test
+    public void rightRotateTest() {
+        /* arrange */
+        ArrayRotate rotate = new ArrayRotate();
+        int[] arr = {1, 2, 3, 4, 5, 6};
+
+        /* act */
+        rotate.rightRotate(arr, 2);
+
+        int[] expecteds = {5, 6, 1, 2, 3, 4};
         assertArrayEquals(expecteds, arr);
     }
 }
